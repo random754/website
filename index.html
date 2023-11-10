@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cesaret Verici Site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+  <style>
+      
+      body {
+        background-size:cover;
+            background-repeat:no-repeat;  
+          background-image: url(cesaret.jpg);
+      }
+  </style>
+</head>
+<body>
+    <center>
+        <h1>Cesaret Verici Sitemize Hoş Geldiniz!</h1>
+        <p id="2">Sitemize hoş geldiniz sitemizin amacı insanları cesaretlendirme ve topluma kazandırmak eğer bu siteye geldiysen günlük olarak yenilenen cesaret mesajları sayesinde kendini daha rahat ve özgür hissedebileceksin</p>
+        <p>Şimdi Butona Tıkla ve mesajı oku kendine güven ve dışarı çık yeni insanlar ile tanış.</p>
+  <button id="cesaretButonu" onclick="cesaretMesaji()">Cesaret Ver</button>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <p>Derdini Anlatabilirsin:</p>
+  <input type="text" name="Derdini Anlatabilirsin" id="1">
+    </center>
+  <script>
+    function cesaretMesaji() {
+      // Cesaret verici mesajları bir dizi içerisinde tanımlayalım
+      var cesaretMesajlari = [
+        "Başarabilirsin!",
+        "Her gün biraz daha ilerliyorsun!",
+        "Harika bir iş çıkarıyorsun!",
+        "Kendine güven, sen bunu başarabilirsin!",
+        "Hiçbir şey seni durduramaz!",
+        "Her şey iyi olacak"
+      ];
+
+      
+      var rastgeleIndex = Math.floor(Math.random() * cesaretMesajlari.length);
+
+      var secilenMesaj = cesaretMesajlari[rastgeleIndex];
+      alert(secilenMesaj);
+    }
+  </script>
+</body>
+</html>
